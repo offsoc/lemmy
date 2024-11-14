@@ -147,6 +147,11 @@ steps:
       - cargo clippy --workspace --tests --all-targets -- -D warnings
     when: *slow_check_paths
 
+  docker_check:
+    image: docker/dockerfile:1.11
+    commands:
+      - docker build --check . -f docker/Dockerfile
+
   cargo_build:
     image: *rust_image
     environment:
