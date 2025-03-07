@@ -94,7 +94,7 @@ lemmy_db_views = { version = "=0.19.6-beta.7", path = "./crates/db_views" }
 lemmy_db_views_actor = { version = "=0.19.6-beta.7", path = "./crates/db_views_actor" }
 lemmy_db_views_moderator = { version = "=0.19.6-beta.7", path = "./crates/db_views_moderator" }
 lemmy_federate = { version = "=0.19.6-beta.7", path = "./crates/federate" }
-activitypub_federation = { version = "0.6.1", default-features = false, features = [
+activitypub_federation = { version = "0.6.2", default-features = false, features = [
   "actix-web",
 ] }
 diesel = "2.2.4"
@@ -154,7 +154,7 @@ ts-rs = { version = "10.0.0", features = [
   "no-serde-warnings",
   "url-impl",
 ] }
-rustls = { version = "0.23.16", features = ["ring"] }
+rustls = { version = "0.23.23", features = ["ring"] }
 futures-util = "0.3.31"
 tokio-postgres = "0.7.12"
 tokio-postgres-rustls = "0.12.0"
