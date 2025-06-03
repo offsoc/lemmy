@@ -3875,6 +3875,7 @@ dependencies = [
  "clokwerk",
  "diesel",
  "diesel-async",
+ "enum-map",
  "futures",
  "futures-util",
  "http 1.2.0",
